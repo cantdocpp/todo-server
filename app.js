@@ -6,7 +6,9 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://philip:mongoose@ds117070.mlab.com:17070/todo');
+mongoose.connect('mongodb://philip:mongoose@ds117070.mlab.com:17070/todo', function() {
+  console.log('masuk');
+});
 //mongodb://<dbuser>:<dbpassword>@ds117070.mlab.com:17070/todo
 
 
