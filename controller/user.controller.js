@@ -2,7 +2,7 @@ const User = require('../model/user.js')
 const Category = require('../model/category');
 const Todo = require('../model/todo');
 var jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 module.exports = {
   registerUser: (req, res) => {
